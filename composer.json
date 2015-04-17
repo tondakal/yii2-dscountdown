@@ -1,0 +1,16 @@
+{
+    "name": "tondakal/yii2-dscountdown",
+    "description": "jQuery countdown widget for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","countdown","widget","jquery"],
+    "license": "MIT",
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/dscountdown": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "tondakal\\widgets\\": ""
+        }
+    }
+}
