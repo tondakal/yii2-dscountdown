@@ -2,9 +2,16 @@ Usage
 ================
 
 ```php
-echo \tondakal\widgets\Dscountdown::widget([
-    'startDate'=>date('F d, Y h:i:s'),
-    'endDate'=>date('F d, Y h:i:s',strtotime('31.12.2015'))
+use \tondakal\widgets\Dscountdown;
+echo Dscountdown::widget([
+    'startDate'=>strtotime("now"),
+    'endDate'=>strtotime('31.12.2015')),
+    'theme'=>Dscountdown::THEME_BLACK,
+    'events'=>[
+        Dscountdown::EVENT_BEFORE_START=>'console.log('beforeStart')',
+        Dscountdown::EVENT_CLOCKING=>'console.log('clocking')',
+        Dscountdown::EVENT_FINISH=>'console.log('finish')',
+    ]
 ])
 ```
 

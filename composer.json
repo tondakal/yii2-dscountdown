@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/dscountdown": "*"
+        "bower-asset/dscountdown-new": "*"
     },
     "autoload": {
         "psr-4": {
